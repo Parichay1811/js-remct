@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./register.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/9428/9428909.png" type="image/x-icon">
+    <title>Register</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Join Us</h1>
+        <p>Create an account to explore more!</p>
+    </header>
+
+    <main class="form-container">
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" required>
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+            <p class="login-link">Already have an account? <a href="./login.html">Login</a></p>
+        </form>
+    </main>
+    <script src="./register.js"></script>
+</body>
+</html>

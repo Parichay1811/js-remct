@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="./assets/logo.png" alt=""></div>
+    <input type="text" id="search" placeholder="Search products..." />
+    <input type="number" id="minPrice" placeholder="Min Price" />
+    <input type="number" id="maxPrice" placeholder="Max Price" />
+    <button id="likedBtn">❤️ Liked</button>
+    <button id="darkModeBtn">🌙</button>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <div class="container">
+    <aside>
+      <h3>Filters</h3>
+      <label><input type="checkbox" class="filter" value="Electronics" /> Electronics</label><br />
+      <label><input type="checkbox" class="filter" value="Jewelry" /> Jewelry</label><br />
+      <label><input type="checkbox" class="filter" value="Men’s Clothing" /> Men's Clothing</label><br />
+      <label><input type="checkbox" class="filter" value="Women’s Clothing" /> Women's Clothing</label>
+    </aside>
+
+    <main id="productContainer">
+      <!-- Products inserted by JS -->
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
