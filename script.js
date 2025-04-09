@@ -27,7 +27,7 @@ function renderProducts(data) {
     card.innerHTML = `
       <img src="${prod.image}" />
       <h4>${prod.name}</h4>
-      <p>$${prod.price}</p>
+      <p>₹${prod.price}</p>
       <button onclick="viewDetails('${prod.id}')">View Details</button>
       <button onclick="toggleLike('${prod.id}')">${liked.includes(prod.id) ? '❤️' : '🤍'}</button>
     `;
