@@ -93,5 +93,5 @@ darkModeBtn.addEventListener("click", () => {
 // Logout
 function logout() {
   localStorage.removeItem("user");
-  window.location.href = "login.html";
+  window.location.href = "./signup_login/register.html";
 }
